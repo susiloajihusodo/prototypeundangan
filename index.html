@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#eeece3">
+  <meta name="description" content="Undangan pernikahan Alya dan Raka. Sebuah awal, untuk selamanya.">
+  <title>Alya & Raka — Wedding Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;450;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=motion-2">
+  <script src="script.js?v=motion-2" defer></script>
+</head>
+<body class="is-covered">
+  <svg class="svg-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+    <symbol id="leaf" viewBox="0 0 160 260"><path d="M73 254C65 185 98 111 115 12M79 217C30 211 19 179 18 160C47 163 72 183 79 217ZM82 189C123 177 145 151 142 128C111 138 89 162 82 189ZM91 155C52 146 42 119 43 96C70 104 90 129 91 155ZM99 118C127 111 147 85 145 65C120 75 103 94 99 118ZM108 77C82 66 82 40 86 25C107 39 112 57 108 77ZM113 42C113 20 127 8 137 4C137 22 127 37 113 42Z" fill="none" stroke="currentColor" stroke-width="1.2"/></symbol>
+    <symbol id="mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path class="mail-flap" d="m3 6 9 7 9-7"/></symbol>
+    <symbol id="arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+  </defs></svg>
+
+  <section class="cover" id="cover" aria-label="Sampul undangan">
+    <div class="cover-top"><a class="monogram" href="#" aria-label="Alya dan Raka">a<span>&</span>r<span class="monogram-dot">.</span></a><span class="eyebrow">THE WEDDING CELEBRATION</span><span class="edition">VOL. 01 / FOREVER</span></div>
+    <div class="cover-body">
+      <div class="side-note side-note-left">A LITTLE MOMENT. A LIFETIME OF LOVE.</div>
+      <div class="invitation-card">
+        <div class="photo-wrap"><img class="couple-photo" src="assets/couple.jpg" alt="Foto ilustrasi pasangan pengantin di taman" fetchpriority="high"><span class="photo-caption">together is a beautiful place to be.</span><span class="photo-number">01 — 02</span></div>
+        <svg class="botanical botanical-left" aria-hidden="true"><use href="#leaf"/></svg>
+        <svg class="botanical botanical-right" aria-hidden="true"><use href="#leaf"/></svg>
+        <div class="cover-copy"><p class="eyebrow">WE’RE GETTING MARRIED</p><h1>Alya <em>&</em> Raka</h1><p class="cover-tagline">Sebuah awal, untuk selamanya.</p><div class="tiny-divider"><span></span>✧<span></span></div><p class="recipient">Kepada Bapak/Ibu/Saudara/i</p><p class="guest-name">Tamu Undangan</p><button class="open-button" id="open-invitation" aria-label="Buka undangan dan putar musik" aria-describedby="opening-music-note"><svg aria-hidden="true"><use href="#mail"/></svg><span>Buka Undangan</span><svg class="button-arrow" aria-hidden="true"><use href="#arrow"/></svg></button><p class="invitation-note" id="opening-music-note">Buka undangan dengan musik ? Perfect ? Ed Sheeran</p></div>
+      </div>
+      <div class="side-note side-note-right">TWO SOULS, ONE BEAUTIFUL STORY</div>
+    </div>
+    <footer class="cover-footer"><span>MADE OF LOVE & LITTLE DETAILS</span><span class="footer-flower">✳</span><span>SCROLL INTO OUR FOREVER</span></footer>
+  </section>
+
+  <main id="invitation" hidden inert>
+    <nav class="main-nav" aria-label="Navigasi undangan"><a class="monogram" href="#home">a<span>&</span>r<span class="monogram-dot">.</span></a><div><a href="#couple">Mempelai</a><a href="#message">Ucapan</a><a href="#location">Lokasi <span>↗</span></a></div></nav>
+    <header class="hero" id="home"><div class="hero-image"><img src="assets/couple.jpg" alt="Foto placeholder pasangan pengantin di tengah taman"><div class="hero-overlay"></div></div><div class="hero-copy"><p class="eyebrow">THE BEGINNING OF OUR FOREVER</p><h2 id="invitation-title" tabindex="-1">Alya <em>&</em> Raka</h2><p>Satu cinta. Seribu cerita. Selamanya bersama.</p></div><a class="scroll-cue" href="#couple">JELAJAHI UNDANGAN <span>↓</span></a><span class="hero-corner">A CELEBRATION OF LOVE</span></header>
+
+    <section class="couple-section section-pad" id="couple"><div class="section-heading reveal"><span class="eyebrow">01 / KEDUA MEMPELAI</span><h2>Dua hati, <em>satu tujuan.</em></h2><p>Dengan rasa syukur dan bahagia, kami memulai babak baru<br class="desktop-break"> dalam perjalanan cinta kami.</p></div><div class="couple-layout reveal"><div class="partner"><span class="eyebrow">THE BRIDE</span><h3>Alya Putri</h3><p>Putri dari<br>Bapak Nama Ayah & Ibu Nama Ibu</p></div><div class="couple-portrait"><img src="assets/couple.jpg" alt="Placeholder foto Alya dan Raka" loading="lazy"><span class="portrait-label">A & R</span></div><div class="partner"><span class="eyebrow">THE GROOM</span><h3>Raka Pratama</h3><p>Putra dari<br>Bapak Nama Ayah & Ibu Nama Ibu</p></div></div><p class="placeholder-note reveal">Nama dan foto merupakan contoh untuk undangan Anda.</p></section>
+
+    <section class="message-section section-pad" id="message"><svg class="message-leaf" aria-hidden="true"><use href="#leaf"/></svg><div class="reveal"><span class="eyebrow">02 / SEBUAH JANJI</span><span class="quote-mark">“</span><h2>Di antara begitu banyak perjalanan,<br>aku memilih berjalan <em>bersamamu.</em></h2><div class="tiny-divider"><span></span>✧<span></span></div><p>Dengan memohon rahmat dan restu Tuhan Yang Maha Esa,<br class="desktop-break"> kami bermaksud menyelenggarakan pernikahan kami.</p><p>Merupakan suatu kebahagiaan bagi kami apabila<br class="desktop-break"> Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu<br class="desktop-break"> untuk mengiringi langkah baru kami.</p><span class="message-signature">With love, Alya & Raka</span></div></section>
+
+    <section class="location-section section-pad" id="location"><div class="location-copy reveal"><span class="eyebrow">03 / TEMPAT KITA BERTEMU</span><h2>Sebuah hari indah.<br><em>Sebuah tempat istimewa.</em></h2><p>Kami tak sabar untuk berbagi tawa, cerita,<br class="desktop-break"> dan kebahagiaan bersama Anda.</p><div class="venue-details"><span class="venue-icon" aria-hidden="true">⌖</span><div><h3>Nama Gedung Pernikahan</h3><address>Jl. Nama Jalan No. 123, RT. 001/RW. 002<br>Kelurahan Menteng, Kecamatan Menteng<br>Jakarta Pusat, DKI Jakarta 10310</address><span class="address-note">Alamat contoh · akan diperbarui</span></div></div></div><div class="venue-card reveal"><div class="venue-art" aria-hidden="true"><div class="map-street street-one"></div><div class="map-street street-two"></div><div class="map-street street-three"></div><div class="map-street street-four"></div><div class="map-garden garden-one"></div><div class="map-garden garden-two"></div><div class="map-pin"><span>✳</span></div><span class="map-label">A PLACE FOR OUR FOREVER</span></div><div class="venue-card-footer"><span>Lokasi perayaan</span><span class="eyebrow">PETA ILUSTRASI</span></div></div></section>
+
+    <footer class="closing"><span class="eyebrow reveal">YOUR PRESENCE IS OUR PRESENT</span><h2 class="reveal">Sampai bertemu di<br><em>hari bahagia kami.</em></h2><p class="reveal">Terima kasih untuk setiap doa dan cinta yang diberikan.</p><span class="closing-signature">Alya & Raka</span><div class="closing-bottom"><span>MADE WITH LOVE</span><a href="#home">KEMBALI KE ATAS ↑</a><span>TOGETHER, FOREVER.</span></div></footer>
+  </main>
+  <audio id="background-music" src="assets/perfect-ed-sheeran.mp3" preload="auto" loop></audio>
+</body>
+</html>
